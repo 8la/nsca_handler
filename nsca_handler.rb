@@ -13,7 +13,7 @@ module MyOrganization
       @c_updated_res   = Chef::Config['updated_resources_critical'] ||  20
       @w_updated_res   = Chef::Config['updated_resources_warning']  ||  5
       @send_nsca_binary= Chef::Config['send_nsca_binary']                || '/usr/sbin/send_nsca'
-      @service_name    = Chef::Config['service_name']                    || 'Chef client run status'
+      @service_name    = Chef::Config['service_name']                    || 'chef_client_run_status'
 
     end
     def report
